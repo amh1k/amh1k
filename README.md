@@ -48,6 +48,11 @@ I am a Full-Stack Developer focused on building robust, high-performance web sys
 * **Scalability:** Designing modular architectures with Next.js and Express that grow with the user base.
 
 ---
+## Beyond the Code
+When I'm not in a code editor or a Jupyter Notebook, I spend my time exploring other interests:
+* 📖 **Reading:** I am an avid reader with a particular focus on **Fantasy** and **Science Fiction**. My favorite series include **The Lord of the Rings**, **A Song of Ice and Fire** and **The Stormlight Archive**
+* 🎬 **Cinema & Shows:** I enjoy watching films and series that dive into the same speculative genres, favoring intricate world-building and futuristic storytelling.
+---
 
 ## 📊 GitHub Stats
 <p align="center">
