@@ -56,8 +56,8 @@ When I'm not in a code editor or a Jupyter Notebook, I spend my time exploring o
 
 ## 📊 GitHub Stats
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=abdulmoizhussain&show_icons=true&theme=tokyonight" alt="Abdul Moiz Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=abdulmoizhussain&layout=compact&theme=tokyonight" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api?username=abdulmoizhussain&show_icons=true&theme=tokyonight&count_private=true" alt="Abdul Moiz Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=abdulmoizhussain&layout=compact&theme=tokyonight&hide=html,css" alt="Top Languages" />
 </p>
 
 ---
