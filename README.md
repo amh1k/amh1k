@@ -1,4 +1,4 @@
-# 🚀 Abdul Moiz | Full-Stack Engineer
+# Abdul Moiz | Full-Stack Engineer
 ### "Clean code, clear mind — build once, maintain forever."
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abdulmoizhussain)
@@ -6,7 +6,7 @@
 
 ---
 
-## 👨‍💻 About Me
+##  About Me
 I am a Full-Stack Developer focused on building robust, high-performance web systems. Currently, I am expanding my technical scope by diving into **Deep Learning**—specifically exploring how **Neural Network architectures** like Transformers are engineered from the ground up and integrated into modern software stacks.
 
 - 🏗️ Specializing in type-safe, scalable applications using the **T3/MERN stack**.
