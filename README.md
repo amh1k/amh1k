@@ -2,11 +2,11 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=38B2AC&center=true&vCenter=true&width=435&lines=Hi+there!,+I'm+Abdul+Moiz" alt="Typing SVG" />
 </p>
 
-<p align="center">
+<!-- <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=abdulmoizhussain&theme=tokyonight&no-bg=true&column=7" alt="trophies" />
-</p>
+</p> -->
 
-# 🚀 Full-Stack Engineer & AI Researcher
+# 🚀 Full-Stack Engineer 
 
 <p align="left">
   <a href="https://www.linkedin.com/in/abdulmoizhussain"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
@@ -55,12 +55,12 @@ I am a Full-Stack Developer focused on building robust, high-performance web sys
 
 ## 📊 Performance Metrics
 <p align="center">
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=abdulmoizhussain&show_icons=true&theme=tokyonight&count_private=true" alt="Main Stats" height="190px" />
+  <img src="https://github-readme-stats.vercel.app/api?username=abdulmoizhussain&show_icons=true&theme=tokyonight&count_private=true&include_all_commits=true" alt="Main Stats" height="190px" />
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=abdulmoizhussain&theme=tokyonight&hide_border=false" alt="Contribution Streak" height="190px" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=abdulmoizhussain&layout=compact&theme=tokyonight&hide=html,css" alt="Top Languages" height="165px" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=abdulmoizhussain&layout=compact&theme=tokyonight&hide=html,css&langs_count=8" alt="Top Languages" height="165px" />
 </p>
 
 ---
