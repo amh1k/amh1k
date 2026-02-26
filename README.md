@@ -54,14 +54,7 @@ I am a Full-Stack Developer focused on building robust, high-performance web sys
 ---
 
 ## 📊 Performance Metrics
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=abdulmoizhussain&show_icons=true&theme=tokyonight&count_private=true&include_all_commits=true" alt="Main Stats" height="190px" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=abdulmoizhussain&theme=tokyonight&hide_border=false" alt="Contribution Streak" height="190px" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=abdulmoizhussain&layout=compact&theme=tokyonight&hide=html,css&langs_count=8" alt="Top Languages" height="165px" />
-</p>
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=amh1k)](https://github.com/anuraghazra/github-readme-stats)
 
 ---
 
