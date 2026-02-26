@@ -46,16 +46,6 @@ I am a Full-Stack Developer focused on building robust, high-performance web sys
 
 ---
 
-## 🧠 Engineering Principles
-* **Type Safety:** Leveraging TypeScript and Prisma to build predictable codebases.
-* **Deep Understanding:** Building Neural Networks (Transformers) from scratch in PyTorch.
-* **Scalability:** Designing modular architectures that grow with the user base.
-
----
-
-## 📊 Performance Metrics
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=amh1k)](https://github.com/anuraghazra/github-readme-stats)
-
 ---
 
 ## 📚 Beyond the Code
