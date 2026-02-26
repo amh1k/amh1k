@@ -1,66 +1,66 @@
 # Abdul Moiz | Full-Stack Engineer
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abdulmoizhussain)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:abdulmoizx97@gmail.com)
+<p align="left">
+  <a href="https://www.linkedin.com/in/abdulmoizhussain"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="mailto:abdulmoizx97@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+  <a href="https://codeforces.com/profile/YOUR_USERNAME_HERE"><img src="https://img.shields.io/badge/Codeforces-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white" alt="Codeforces"></a>
+</p>
 
 ---
 
 ##  About Me
 I am a Full-Stack Developer focused on building robust, high-performance web systems. Currently, I am expanding my technical scope by diving into **Deep Learning**—specifically exploring how **Neural Network architectures** like Transformers are engineered from the ground up and integrated into modern software stacks.
 
-- Specializing in type-safe, scalable applications using the **T3/MERN stack**.
--  Implementing **Deep Learning models** in PyTorch to understand the mechanics of neural attention and pattern recognition.
--  Optimizing data persistence with **PostgreSQL**, **Prisma**, and **Advanced Query Design**.
+* **Architecture:** Specializing in type-safe, scalable applications using the **T3/MERN stack**.
+* **AI/ML:** Implementing **Deep Learning models** in PyTorch to understand the mechanics of neural attention.
+* **Data:** Optimizing persistence with **PostgreSQL**, **Prisma**, and **Advanced Query Design**.
 
 ---
 
-## Technical Arsenal
+## 🛠 Technical Arsenal
 
 ### Full-Stack Development
-![Next.js](https://img.shields.io/badge/Next.js-000?style=flat-square&logo=nextdotjs&logoColor=white) 
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)
-![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
-![Express](https://img.shields.io/badge/Express.js-404D59?style=flat-square&logo=express&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=flat-square&logo=Prisma&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=flat-square&logo=mongodb&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=Prisma&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
 
-### Deep Learning
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
-
-### Systems & Tools
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
-![pnpm](https://img.shields.io/badge/pnpm-F69220?style=flat-square&logo=pnpm&logoColor=white)
+### Deep Learning & Engineering
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
 ---
 
-## Engineering Principles
+##  Engineering Principles
 * **Type Safety:** Leveraging TypeScript and Prisma to build predictable, self-documenting codebases.
 * **Deep Understanding:** Moving beyond APIs to build Neural Networks (Transformers) from the ground up in PyTorch.
 * **Scalability:** Designing modular architectures with Next.js and Express that grow with the user base.
 
 ---
-## Beyond the Code
+
+##  Beyond the Code
 When I'm not in a code editor or a Jupyter Notebook, I spend my time exploring other interests:
-* **Reading:** I am an avid reader with a particular focus on **Fantasy** and **Science Fiction**. My favorite series include **The Lord of the Rings**, **A Song of Ice and Fire** and **The Stormlight Archive**
-*  **Cinema & Shows:** I enjoy watching films and series that dive into the same speculative genres, favoring intricate world-building and futuristic storytelling.
+* **Reading:** Avid reader of **Fantasy** and **Science Fiction**. (The Lord of the Rings, A Song of Ice and Fire, The Stormlight Archive).
+* **Cinema:** Exploring intricate world-building and futuristic storytelling in speculative genres.
+
 ---
 
 ## GitHub Stats
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=abdulmoizhussain&show_icons=true&theme=tokyonight&count_private=true" alt="Abdul Moiz Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=abdulmoizhussain&layout=compact&theme=tokyonight&hide=html,css" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api?username=abdulmoizhussain&show_icons=true&theme=tokyonight&count_private=true" alt="Abdul Moiz Stats" height="180px" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=abdulmoizhussain&layout=compact&theme=tokyonight&hide=html,css" alt="Top Languages" height="180px" />
 </p>
 
 ---
 
-## Let's Connect
-- **LinkedIn:** [abdulmoizhussain](https://www.linkedin.com/in/abdulmoizhussain)
-- **Email:** [abdulmoizx97@gmail.com](mailto:abdulmoizx97@gmail.com)
+##  Let's Connect
+* **LinkedIn:** [abdulmoizhussain](https://www.linkedin.com/in/abdulmoizhussain)
+* **Codeforces:** [YourProfile](https://codeforces.com/profile/YOUR_USERNAME_HERE)
+* **Email:** [abdulmoizx97@gmail.com](mailto:abdulmoizx97@gmail.com)
