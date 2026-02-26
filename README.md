@@ -1,18 +1,22 @@
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=38B2AC&center=true&vCenter=true&width=435&lines=Full-Stack+Engineer;Deep+Learning+Enthusiast;Building+Transformers+from+Scratch" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=38B2AC&center=true&vCenter=true&width=435&lines=Hi+there!,+I'm+Abdul+Moiz" alt="Typing SVG" />
 </p>
 
-# Abdul Moiz | Full-Stack Engineer
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=abdulmoizhussain&theme=tokyonight&no-bg=true&column=7" alt="trophies" />
+</p>
+
+# 🚀 Full-Stack Engineer & AI Researcher
 
 <p align="left">
   <a href="https://www.linkedin.com/in/abdulmoizhussain"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="mailto:abdulmoizx97@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
-  <a href="https://codeforces.com/amh1k"><img src="https://img.shields.io/badge/Codeforces-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white" alt="Codeforces"></a>
+  <a href="https://codeforces.com/profile/amh1k"><img src="https://img.shields.io/badge/Codeforces-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white" alt="Codeforces"></a>
 </p>
 
 ---
 
-##  About Me
+## ⚡ About Me
 I am a Full-Stack Developer focused on building robust, high-performance web systems. Currently, I am expanding my technical scope by diving into **Deep Learning**—specifically exploring how **Neural Network architectures** like Transformers are engineered from the ground up and integrated into modern software stacks.
 
 * **Architecture:** Specializing in type-safe, scalable applications using the **T3/MERN stack**.
@@ -42,29 +46,32 @@ I am a Full-Stack Developer focused on building robust, high-performance web sys
 
 ---
 
-##  Engineering Principles
-* **Type Safety:** Leveraging TypeScript and Prisma to build predictable, self-documenting codebases.
-* **Deep Understanding:** Moving beyond APIs to build Neural Networks (Transformers) from the ground up in PyTorch.
-* **Scalability:** Designing modular architectures with Next.js and Express that grow with the user base.
+## 🧠 Engineering Principles
+* **Type Safety:** Leveraging TypeScript and Prisma to build predictable codebases.
+* **Deep Understanding:** Building Neural Networks (Transformers) from scratch in PyTorch.
+* **Scalability:** Designing modular architectures that grow with the user base.
 
 ---
 
-##  Beyond the Code
-When I'm not in a code editor or a Jupyter Notebook, I spend my time exploring other interests:
-* **Reading:** Avid reader of **Fantasy** and **Science Fiction**. (The Lord of the Rings, A Song of Ice and Fire, The Stormlight Archive).
-* **Cinema:** Exploring intricate world-building and futuristic storytelling in speculative genres.
-
----
-
-## GitHub Stats
+## 📊 Performance Metrics
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=abdulmoizhussain&show_icons=true&theme=tokyonight&count_private=true" alt="Abdul Moiz Stats" height="180px" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=abdulmoizhussain&layout=compact&theme=tokyonight&hide=html,css" alt="Top Languages" height="180px" />
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=abdulmoizhussain&show_icons=true&theme=tokyonight&count_private=true" alt="Main Stats" height="190px" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=abdulmoizhussain&theme=tokyonight&hide_border=false" alt="Contribution Streak" height="190px" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=abdulmoizhussain&layout=compact&theme=tokyonight&hide=html,css" alt="Top Languages" height="165px" />
 </p>
 
 ---
 
-##  Let's Connect
+## 📚 Beyond the Code
+* **Reading:** Avid reader of **Fantasy** and **Science Fiction** (*The Lord of the Rings*, *Stormlight Archive*).
+* **Cinema:** Exploring intricate world-building and futuristic storytelling.
+
+---
+
+## 🤝 Let's Connect
 * **LinkedIn:** [abdulmoizhussain](https://www.linkedin.com/in/abdulmoizhussain)
-* **Codeforces:** [YourProfile](https://codeforces.com/profile/amh1k)
+* **Codeforces:** [amh1k](https://codeforces.com/profile/amh1k)
 * **Email:** [abdulmoizx97@gmail.com](mailto:abdulmoizx97@gmail.com)
