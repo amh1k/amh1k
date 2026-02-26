@@ -1,9 +1,13 @@
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=38B2AC&center=true&vCenter=true&width=435&lines=Full-Stack+Engineer;Deep+Learning+Enthusiast;Building+Transformers+from+Scratch" alt="Typing SVG" />
+</p>
+
 # Abdul Moiz | Full-Stack Engineer
 
 <p align="left">
   <a href="https://www.linkedin.com/in/abdulmoizhussain"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="mailto:abdulmoizx97@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
-  <a href="https://codeforces.com/profile/YOUR_USERNAME_HERE"><img src="https://img.shields.io/badge/Codeforces-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white" alt="Codeforces"></a>
+  <a href="https://codeforces.com/amh1k"><img src="https://img.shields.io/badge/Codeforces-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white" alt="Codeforces"></a>
 </p>
 
 ---
@@ -62,5 +66,5 @@ When I'm not in a code editor or a Jupyter Notebook, I spend my time exploring o
 
 ##  Let's Connect
 * **LinkedIn:** [abdulmoizhussain](https://www.linkedin.com/in/abdulmoizhussain)
-* **Codeforces:** [YourProfile](https://codeforces.com/profile/YOUR_USERNAME_HERE)
+* **Codeforces:** [YourProfile](https://codeforces.com/profile/amh1k)
 * **Email:** [abdulmoizx97@gmail.com](mailto:abdulmoizx97@gmail.com)
