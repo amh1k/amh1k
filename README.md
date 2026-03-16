@@ -8,10 +8,10 @@
 
 <div align="center">
 
-[![LinkedIn](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/abdulmoizhussain)&nbsp;
-[![Gmail](https://skillicons.dev/icons?i=gmail)](mailto:abdulmoizx97@gmail.com)&nbsp;
-[![LeetCode](https://skillicons.dev/icons?i=leetcode)](https://leetcode.com/abdulmoizhussain)&nbsp;
-[![Codeforces](https://img.shields.io/badge/-Codeforces-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white)](https://codeforces.com/profile/amh1k)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abdulmoizhussain)
+[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:abdulmoizx97@gmail.com)
+[![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/abdulmoizhussain)
+[![Codeforces](https://img.shields.io/badge/Codeforces-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white)](https://codeforces.com/profile/amh1k)
 
 </div>
 
@@ -19,7 +19,8 @@
 
 ---
 
-Full-Stack Developer building type-safe, scalable web systems. Currently exploring how **Transformer architectures** are engineered from the ground up in PyTorch.
+
+Full-stack developer building type-safe, scalable web systems. My expertise lies in architecting robust applications using the T3 and MERN stacks, bridging the gap between high-performance backends and user-centric frontends. I am currently diving deep into the mechanics of machine learning, exploring Transformer architectures from the ground up in PyTorch while investigating the engineering principles behind large language models and deep learning optimization
 
 ---
 
@@ -43,10 +44,6 @@ Full-Stack Developer building type-safe, scalable web systems. Currently explori
 <img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=abdulmoizhussain&layout=compact&hide_border=true&bg_color=0d0621&title_color=c4a7e7&text_color=cdd6f4" />
 
 </div>
-
----
-
-*Currently reading: The Stormlight Archive — where the best systems have rules no one fully understands yet.*
 
 <br/>
 
