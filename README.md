@@ -9,7 +9,9 @@
 <div align="center">
 
 [![LinkedIn](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/abdulmoizhussain)&nbsp;
-[![Gmail](https://skillicons.dev/icons?i=gmail)](mailto:abdulmoizx97@gmail.com)
+[![Gmail](https://skillicons.dev/icons?i=gmail)](mailto:abdulmoizx97@gmail.com)&nbsp;
+[![LeetCode](https://skillicons.dev/icons?i=leetcode)](https://leetcode.com/abdulmoizhussain)&nbsp;
+[![Codeforces](https://img.shields.io/badge/-Codeforces-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white)](https://codeforces.com/profile/amh1k)
 
 </div>
 
@@ -27,10 +29,10 @@ Full-Stack Developer building type-safe, scalable web systems. Currently explori
 <img src="https://skillicons.dev/icons?i=nextjs,react,ts,tailwind,nodejs,prisma,postgres,mongodb&perline=8" />
 </div>
 
-**ML & Systems**
+**ML**
 
 <div>
-<img src="https://skillicons.dev/icons?i=python,pytorch,numpy,cpp,git&perline=8" />
+<img src="https://skillicons.dev/icons?i=python,pytorch,cpp,git&perline=8" />
 </div>
 
 ---
