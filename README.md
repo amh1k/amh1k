@@ -10,7 +10,7 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abdulmoizhussain)
 [![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:abdulmoizx97@gmail.com)
-[![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/abdulmoizhussain)
+[![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/abdulmoizx97/)
 [![Codeforces](https://img.shields.io/badge/Codeforces-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white)](https://codeforces.com/profile/amh1k)
 
 </div>
@@ -40,8 +40,8 @@ Full-stack developer building type-safe, scalable web systems. My expertise lies
 
 <div align="center">
 
-<img height="160em" src="https://github-readme-stats.vercel.app/api?username=abdulmoizhussain&show_icons=true&hide_border=true&bg_color=0d0621&title_color=c4a7e7&icon_color=9d7cd8&text_color=cdd6f4&count_private=true&hide_rank=true" />
-<img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=abdulmoizhussain&layout=compact&hide_border=true&bg_color=0d0621&title_color=c4a7e7&text_color=cdd6f4" />
+<img height="160em" src="https://github-readme-stats.vercel.app/api?username=amh1k&show_icons=true&hide_border=true&bg_color=0d0621&title_color=c4a7e7&icon_color=9d7cd8&text_color=cdd6f4&count_private=true&hide_rank=true" />
+<img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=amh1k&layout=compact&hide_border=true&bg_color=0d0621&title_color=c4a7e7&text_color=cdd6f4" />
 
 </div>
 
