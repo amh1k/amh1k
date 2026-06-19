@@ -81,15 +81,40 @@ tokenization, positional encoding, and fine-tuning concepts.
 
 **Backend / Infra**
 
-![Backend](https://skillicons.dev/icons?i=nodejs,ts,express,go,postgres,mongodb,redis,docker)
+<p>
+  <img src="https://img.shields.io/badge/Node.js-004643?style=for-the-badge&logo=nodedotjs&logoColor=FAF4D3" />
+  <img src="https://img.shields.io/badge/TypeScript-004643?style=for-the-badge&logo=typescript&logoColor=FAF4D3" />
+  <img src="https://img.shields.io/badge/Express-0C1618?style=for-the-badge&logo=express&logoColor=FAF4D3" />
+  <img src="https://img.shields.io/badge/Go-004643?style=for-the-badge&logo=go&logoColor=FAF4D3" />
+  <img src="https://img.shields.io/badge/Redis-0C1618?style=for-the-badge&logo=redis&logoColor=FAF4D3" />
+  <img src="https://img.shields.io/badge/Docker-004643?style=for-the-badge&logo=docker&logoColor=FAF4D3" />
+</p>
+
+**Data / Persistence**
+
+<p>
+  <img src="https://img.shields.io/badge/PostgreSQL-004643?style=for-the-badge&logo=postgresql&logoColor=FAF4D3" />
+  <img src="https://img.shields.io/badge/MongoDB-0C1618?style=for-the-badge&logo=mongodb&logoColor=FAF4D3" />
+  <img src="https://img.shields.io/badge/Prisma-004643?style=for-the-badge&logo=prisma&logoColor=FAF4D3" />
+</p>
 
 **Frontend**
 
-![Frontend](https://skillicons.dev/icons?i=nextjs,react,tailwind)
+<p>
+  <img src="https://img.shields.io/badge/Next.js-0C1618?style=for-the-badge&logo=nextdotjs&logoColor=FAF4D3" />
+  <img src="https://img.shields.io/badge/React-004643?style=for-the-badge&logo=react&logoColor=FAF4D3" />
+  <img src="https://img.shields.io/badge/Tailwind-004643?style=for-the-badge&logo=tailwindcss&logoColor=FAF4D3" />
+</p>
 
 **AI / Systems**
 
-![AI](https://skillicons.dev/icons?i=python,pytorch,cpp,git,linux)
+<p>
+  <img src="https://img.shields.io/badge/Python-004643?style=for-the-badge&logo=python&logoColor=FAF4D3" />
+  <img src="https://img.shields.io/badge/PyTorch-0C1618?style=for-the-badge&logo=pytorch&logoColor=FAF4D3" />
+  <img src="https://img.shields.io/badge/C++-004643?style=for-the-badge&logo=cplusplus&logoColor=FAF4D3" />
+  <img src="https://img.shields.io/badge/Linux-0C1618?style=for-the-badge&logo=linux&logoColor=FAF4D3" />
+  <img src="https://img.shields.io/badge/Git-004643?style=for-the-badge&logo=git&logoColor=FAF4D3" />
+</p>
 
 ---
 
