@@ -8,7 +8,7 @@ I like working close to the parts of software that make products dependable:
 APIs, queues, databases, auth, workers, observability, and systems that keep
 running when things get messy.
 
-[Portfolio](https://amh1k.github.io/portfolio/) .
+[Portfolio](http://abdulmoizhussain.me) .
 [LinkedIn](https://www.linkedin.com/in/abdulmoizhussain) .
 [Email](mailto:abdulmoizx97@gmail.com) .
 [LeetCode](https://leetcode.com/u/abdulmoizx97/) .
