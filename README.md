@@ -1,50 +1,115 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a0533,30:2d1b69,60:4a2080,100:1a0533&height=180&section=header&text=Abdul%20Moiz&fontSize=54&fontColor=e8d5ff&fontAlignY=45&desc=Full-Stack%20Engineer%20%E2%80%A2%20Deep%20Learning%20Explorer&descAlignY=65&descSize=15&descColor=b39ddb" width="100%" />
+# Abdul Moiz Hussain
+
+### Backend / Infrastructure-focused engineer building reliable systems with Node.js, TypeScript, and Go.
+
+I like working close to the parts of software that make products dependable:
+APIs, queues, databases, auth, workers, observability, and systems that keep
+running when things get messy.
+
+[Portfolio](https://amh1k.github.io/portfolio/) .
+[LinkedIn](https://www.linkedin.com/in/abdulmoizhussain) .
+[Email](mailto:abdulmoizx97@gmail.com) .
+[LeetCode](https://leetcode.com/u/abdulmoizx97/) .
+[Codeforces](https://codeforces.com/profile/amh1k)
 
 </div>
 
-<br/>
+---
+
+## What I'm Focused On
+
+I build backend-heavy web systems with **Node.js**, **TypeScript**,
+**Express**, **Next.js**, **PostgreSQL**, **MongoDB**, **Redis**, and background
+job infrastructure.
+
+Right now, I'm going deeper into **Go** and infrastructure-oriented engineering:
+cleaner APIs, better concurrency patterns, observability, distributed workers,
+and production-minded service design.
+
+AI/ML is also part of my work, but more as an engineering layer than a buzzword.
+I've been exploring **PyTorch**, transformer internals, model training loops,
+classical ML pipelines, and how intelligent systems can be made usable through
+solid backend architecture.
+
+---
+
+## Engineering Interests
+
+```txt
+Backend APIs        Node.js / Express / Go
+Infrastructure      queues / workers / Redis / Docker / observability
+Databases           PostgreSQL / MongoDB / schema design
+Reliability         tests / retries / failure handling / clean boundaries
+AI Engineering      PyTorch / transformers / ML pipelines
+Algorithms          competitive programming / C++ / DSA
+```
+
+---
+
+## Selected Work
+
+### Keepalive Monitoring
+
+Distributed uptime monitoring system built around background workers, queues,
+Redis orchestration, retries, and heartbeat processing.
+
+### ScadrialAPI
+
+Production-minded Go REST API with PostgreSQL, token auth, RBAC, Swagger docs,
+migrations, and E2E tests.
+
+### StormShelf
+
+Backend-only Express/Mongoose API with JWT auth, protected routes, Cloudinary
+uploads, reviews, favorites, and modular CRUD workflows.
+
+### DAA Algorithm Visualizer
+
+C++ and Next.js system for visualizing divide-and-conquer algorithms,
+benchmarking performance, and exposing algorithmic state transitions.
+
+### LLM From Scratch
+
+PyTorch-based exploration of transformer architecture, causal attention,
+tokenization, positional encoding, and fine-tuning concepts.
+
+---
+
+## Tech I Use
+
+**Backend / Infra**
+
+![Backend](https://skillicons.dev/icons?i=nodejs,ts,express,go,postgres,mongodb,redis,docker)
+
+**Frontend**
+
+![Frontend](https://skillicons.dev/icons?i=nextjs,react,tailwind)
+
+**AI / Systems**
+
+![AI](https://skillicons.dev/icons?i=python,pytorch,cpp,git,linux)
+
+---
+
+## Competitive Programming & Achievements
+
+- Codeforces **Pupil**
+- Solved **700+** problems across LeetCode, Codeforces, and AtCoder
+- Qualified for **ICPC Regionals**
+- **3rd Place**, Coders Cup 2025
+- **Champion**, AI Grand Prix Procom 2026
+- **4th Place**, AI Got Talent DevDay 2026 with `0.986 F1`
+- Dean's List of Honor for **4 semesters**
+
+---
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abdulmoizhussain)
-[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:abdulmoizx97@gmail.com)
-[![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/abdulmoizx97/)
-[![Codeforces](https://img.shields.io/badge/Codeforces-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white)](https://codeforces.com/profile/amh1k)
+### Currently
+
+Building backend systems, learning Go seriously, and studying how infrastructure
+and AI systems meet in real products.
 
 </div>
-
-<br/>
-
----
-
-
-Full-stack developer building type-safe, scalable web systems. My expertise lies in architecting robust applications using the T3 and MERN stacks, bridging the gap between high-performance backends and user-centric frontends. I am currently diving deep into the mechanics of machine learning, exploring Transformer architectures from the ground up in PyTorch while investigating the engineering principles behind large language models and deep learning optimization
-
----
-
-**Web**
-
-<div>
-<img src="https://skillicons.dev/icons?i=nextjs,react,ts,tailwind,nodejs,prisma,postgres,mongodb&perline=8" />
-</div>
-
-**ML**
-
-<div>
-<img src="https://skillicons.dev/icons?i=python,pytorch,cpp,git&perline=8" />
-</div>
-
----
-
-<div align="center">
-
-<img height="160em" src="https://github-readme-stats.vercel.app/api?username=amh1k&show_icons=true&hide_border=true&bg_color=0d0621&title_color=c4a7e7&icon_color=9d7cd8&text_color=cdd6f4&count_private=true&hide_rank=true" />
-<img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=amh1k&layout=compact&hide_border=true&bg_color=0d0621&title_color=c4a7e7&text_color=cdd6f4" />
-
-</div>
-
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a0533,30:2d1b69,60:4a2080,100:1a0533&height=100&section=footer" width="100%" />
