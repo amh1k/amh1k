@@ -13,6 +13,10 @@ running when things get messy.
 [Email](mailto:abdulmoizx97@gmail.com) .
 [LeetCode](https://leetcode.com/u/abdulmoizx97/) .
 [Codeforces](https://codeforces.com/profile/amh1k)
+<br />
+
+![Profile views](https://komarev.com/ghpvc/?username=abdulmoizx97\&label=Profile%20views\&color=004643\&style=for-the-badge)
+
 
 </div>
 
