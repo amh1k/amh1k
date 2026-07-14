@@ -2,7 +2,7 @@
 
 # Abdul Moiz Hussain
 
-### Backend-first full-stack developer building reliable, real-time applications with Go, TypeScript, and React.
+### Backend-first full-stack engineer building reliable, real-time applications with Go, TypeScript, and React.
 
 I build complete web products across the frontend, backend, and data layers, with
 a stronger focus on APIs, concurrency, WebSockets, authentication, background
