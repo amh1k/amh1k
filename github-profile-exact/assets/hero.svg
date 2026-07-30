@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 300" role="img" aria-labelledby="title desc">
+  <title id="title">Abdul Moiz Hussain profile header</title>
+  <desc id="desc">Dark animated developer header with cyan violet waveform and blinking cursor.</desc>
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="60%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0"/>
+      <stop offset="10%" stop-color="#22d3ee" stop-opacity="0.45"/>
+      <stop offset="90%" stop-color="#a855f7" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="bgGlow" cx="70%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#0b1220" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-40%" y="-200%" width="180%" height="500%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .title { font: 700 64px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; letter-spacing: .4px; }
+      .body { font: 400 26px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+      .muted { fill: #c9d1d9; }
+      .soft { fill: #b7c0cb; }
+      .accent { fill: url(#g1); }
+      .cursor { animation: blink 1s steps(1, end) infinite; }
+      .wave { animation: flow 10s linear infinite; stroke-dasharray: 12 10; }
+      .spark1 { animation: pulse 2.4s ease-in-out infinite; }
+      .spark2 { animation: pulse 2.4s ease-in-out .7s infinite; }
+      .spark3 { animation: pulse 2.4s ease-in-out 1.4s infinite; }
+      @keyframes blink { 50% { opacity: 0; } }
+      @keyframes flow { to { stroke-dashoffset: -380; } }
+      @keyframes pulse {
+        0%,100% { opacity: .35; r: 3px; }
+        50% { opacity: 1; r: 5px; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .cursor,.wave,.spark1,.spark2,.spark3 { animation: none; }
+      }
+    </style>
+  </defs>
+
+  <rect width="1600" height="300" rx="22" fill="#0d1117"/>
+  <rect x="1" y="1" width="1598" height="298" rx="21" fill="none" stroke="#161b22"/>
+  <rect x="0" y="0" width="1600" height="300" fill="url(#bgGlow)"/>
+
+  <g transform="translate(46,66)">
+    <text x="0" y="0" class="title muted">Hi, I’m </text>
+    <text x="265" y="0" class="title accent">Abdul Moiz Hussain</text>
+    <text x="840" y="0" class="title muted">👋</text>
+    <rect x="892" y="-52" width="8" height="64" rx="4" fill="#f8fafc" class="cursor"/>
+
+    <text x="0" y="72" class="body soft">Backend-focused full-stack engineer building distributed systems,</text>
+    <text x="0" y="124" class="body soft">APIs and developer tools. Always shipping, </text>
+    <text x="842" y="124" class="body accent">always learning.</text>
+  </g>
+
+  <g transform="translate(880,46)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M0 95 H640" stroke="url(#g2)" stroke-width="1.5"/>
+    <path class="wave" filter="url(#glow)" d="M0 95 C32 95 42 76 72 76 C103 76 112 116 144 116 C180 116 188 62 226 62 C262 62 270 134 308 134 C344 134 352 56 390 56 C426 56 434 154 476 154 C518 154 526 54 566 54 C600 54 610 92 640 92" stroke="url(#g1)" stroke-width="3.2"/>
+    <circle class="spark1" cx="144" cy="116" r="3" fill="#22d3ee" stroke="none"/>
+    <circle class="spark2" cx="308" cy="134" r="3" fill="#60a5fa" stroke="none"/>
+    <circle class="spark3" cx="566" cy="54" r="3" fill="#a855f7" stroke="none"/>
+  </g>
+
+  <path d="M46 266 H1554" stroke="#21262d" stroke-width="1"/>
+</svg>
