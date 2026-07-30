@@ -12,7 +12,6 @@ import html
 import json
 import os
 import random
-import textwrap
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -272,25 +271,16 @@ def social_button(label: str, key: str) -> str:
 </svg>'''
 
 
-def section_title(title: str, symbol: str) -> str:
-    return svg_start(1400, 70, title) + f'''
-<rect width="1400" height="70" fill="{BG}"/>
-<text x="6" y="45" class="mono" font-size="30" fill="{CYAN}">{esc(symbol)}</text>
-<text x="52" y="45" class="sans" font-size="25" font-weight="700" fill="{TEXT}">{esc(title)}</text>
-<path d="M300 36 H1394" stroke="{BORDER}"/>
-</svg>'''
-
-
 def level_color(count: int) -> str:
     if count <= 0:
-        return "#151b23"
+        return "#161b22"
     if count == 1:
-        return "#0d4f5b"
+        return "#0e4429"
     if count <= 3:
-        return "#0f7182"
+        return "#006d32"
     if count <= 6:
-        return "#17a9bd"
-    return CYAN
+        return "#26a641"
+    return GREEN
 
 
 def stats_svg(config: dict[str, Any], data: dict[str, Any]) -> str:
@@ -326,57 +316,6 @@ def stats_svg(config: dict[str, Any], data: dict[str, Any]) -> str:
     return ''.join(chunks)
 
 
-def wrap_lines(text: str, width: int = 42, limit: int = 2) -> list[str]:
-    lines = textwrap.wrap(text or "", width=width, break_long_words=False, break_on_hyphens=False)
-    lines = lines[:limit]
-    if len(lines) == limit and len(' '.join(lines)) < len(text):
-        lines[-1] = lines[-1].rstrip(' .') + '…'
-    return lines or [""]
-
-
-def project_svg(project: dict[str, Any], index: int) -> str:
-    title = project.get("label") or project["repo"].split("/")[-1]
-    lines = wrap_lines(project.get("description", ""), 42, 2)
-    icon = ["[]", "~", "&lt;/&gt;"][index % 3]
-    accent = [CYAN, PURPLE, BLUE][index % 3]
-    chunks = [svg_start(440, 230, title), f'<rect x="1" y="1" width="438" height="228" rx="16" fill="{PANEL}" stroke="{BORDER}"/>']
-    chunks.append(f'<text x="28" y="68" class="mono" font-size="42" fill="{accent}">{icon}</text><text x="94" y="58" class="mono" font-size="23" font-weight="700" fill="{TEXT}">{esc(title)}</text>')
-    for i, line in enumerate(lines):
-        chunks.append(f'<text x="94" y="{94+i*31}" class="mono" font-size="16" fill="{SOFT}">{esc(line)}</text>')
-    chunks.append(f'<path d="M24 170 H416" stroke="{BORDER_SOFT}"/><circle cx="32" cy="200" r="7" fill="{accent}"/><text x="50" y="206" class="mono" font-size="16" fill="{SOFT}">{esc(project.get("language", "Code"))}</text><text x="252" y="206" class="mono" font-size="16" fill="{SOFT}">* {esc(project.get("stars",0))}</text><text x="344" y="206" class="mono" font-size="16" fill="{SOFT}">fork {esc(project.get("forks",0))}</text>')
-    chunks.append('</svg>')
-    return ''.join(chunks)
-
-
-def oss_card_svg(item: dict[str, Any], index: int) -> str:
-    accent = [CYAN, BLUE, PURPLE][index % 3]
-    return svg_start(300, 96, item["label"]) + f'''
-<rect x="1" y="1" width="298" height="94" rx="13" fill="{PANEL}" stroke="{BORDER}"/>
-<circle cx="30" cy="48" r="14" fill="none" stroke="{accent}" stroke-width="4"/><path d="M22 48 h16 M30 40 v16" stroke="{accent}" stroke-width="2"/>
-<text x="58" y="42" class="mono" font-size="16" font-weight="700" fill="{TEXT}">{esc(item['label'])}</text>
-<text x="58" y="68" class="mono" font-size="13" fill="{MUTED}">{esc(item.get('prs',0))} PRs · {esc(item.get('merged',0))} merged</text>
-</svg>'''
-
-
-def oss_graph_svg(items: list[dict[str, Any]], live: bool) -> str:
-    values = [int(x.get("prs", 0)) for x in items]
-    if not live and max(values, default=0) == 0:
-        values = [3, 2, 1]
-    maxv = max(values + [1])
-    bars = []
-    for i, (item, value) in enumerate(zip(items, values)):
-        h = 15 + int(38 * value / maxv)
-        x = 170 + i * 36
-        bars.append(f'<rect x="{x}" y="{72-h}" width="18" height="{h}" rx="4" fill="{[CYAN,BLUE,PURPLE][i%3]}" opacity=".9"/>')
-    status = "live PR activity" if live else "preview — workflow syncs live data"
-    return svg_start(440, 96, "Open source contribution pulse") + f'''
-<rect x="1" y="1" width="438" height="94" rx="13" fill="{PANEL}" stroke="{BORDER}"/>
-<text x="24" y="38" class="mono" font-size="17" font-weight="700" fill="{TEXT}">OSS contribution pulse</text>
-<text x="24" y="66" class="mono" font-size="12" fill="{MUTED}">{esc(status)}</text>
-<path d="M154 76 H412" stroke="{BORDER_SOFT}"/>{''.join(bars)}
-</svg>'''
-
-
 def footer_svg(config: dict[str, Any]) -> str:
     stack = "  ·  ".join(config.get("stack", []))
     return svg_start(1400, 145, "Code Review Learn Repeat") + f'''
@@ -389,20 +328,35 @@ def footer_svg(config: dict[str, Any]) -> str:
 </svg>'''
 
 
-def write_readme(config: dict[str, Any]) -> None:
+def write_readme(config: dict[str, Any], data: dict[str, Any]) -> None:
     socials = "\n  ".join(
         f'<a href="{esc(item["url"])}"><img src="./assets/social-{esc(item["key"])}.svg" width="18.5%" alt="{esc(item["label"])}" /></a>'
         for item in config["socials"]
     )
-    projects = "\n  ".join(
-        f'<a href="https://github.com/{esc(item["repo"])}"><img src="./assets/project-{i+1}.svg" width="32%" alt="{esc(item.get("label") or item["repo"].split("/")[-1])}" /></a>'
-        for i, item in enumerate(config["projects"])
+    project_rows = "\n".join(
+        "  <tr>\n"
+        '    <td valign="top">\n'
+        f'      <a href="{esc(item["url"])}"><strong>{esc(item.get("label") or item["repo"].split("/")[-1])}</strong></a><br />\n'
+        f'      <sub>{esc(item.get("description", ""))}</sub>\n'
+        "    </td>\n"
+        '    <td align="right" valign="middle">\n'
+        f'      <code>{esc(item.get("language", "Code"))}</code><br />\n'
+        f'      <sub>★ {esc(item.get("stars", 0))} · Fork {esc(item.get("forks", 0))}</sub>\n'
+        "    </td>\n"
+        "  </tr>"
+        for item in data["projects"]
     )
-    oss_count = max(1, len(config["oss"]))
-    oss_width = "22%" if oss_count == 3 else f"{max(14, int(66 / oss_count))}%"
-    oss_cards = "\n  ".join(
-        f'<a href="https://github.com/{esc(item["repo"])}/pulls?q=is%3Apr+author%3A{esc(config["username"])}"><img src="./assets/oss-{i+1}.svg" width="{oss_width}" alt="{esc(item["label"])} contributions" /></a>'
-        for i, item in enumerate(config["oss"])
+    oss_rows = "\n".join(
+        "  <tr>\n"
+        '    <td valign="middle">\n'
+        f'      <a href="{esc(item["url"])}"><strong>{esc(item["label"])}</strong></a><br />\n'
+        f'      <sub>{esc(item["repo"])}</sub>\n'
+        "    </td>\n"
+        '    <td align="right" valign="middle">\n'
+        f'      <sub>{esc(item.get("prs", 0))} PRs · {esc(item.get("merged", 0))} merged</sub>\n'
+        "    </td>\n"
+        "  </tr>"
+        for item in data["oss"]
     )
     name = esc(config["name"])
     readme = (
@@ -410,10 +364,12 @@ def write_readme(config: dict[str, Any]) -> None:
         f'<p align="center">\n  <img src="./assets/hero.svg" width="100%" alt="{name}" />\n</p>\n\n'
         f'<p align="center">\n  {socials}\n</p>\n\n'
         '<p align="center">\n  <img src="./assets/stats.svg" width="100%" alt="GitHub statistics and contribution activity" />\n</p>\n\n'
-        '<p align="center"><img src="./assets/section-projects.svg" width="100%" alt="Featured Projects" /></p>\n\n'
-        f'<p align="center">\n  {projects}\n</p>\n\n'
-        '<p align="center"><img src="./assets/section-oss.svg" width="100%" alt="Open Source Contributions" /></p>\n\n'
-        f'<p align="center">\n  {oss_cards}\n  <img src="./assets/oss-graph.svg" width="32%" alt="Open source contribution graph" />\n</p>\n\n'
+        '<!-- Project names and details are native README text. Edit profile.config.json; no SVG changes are needed. -->\n'
+        '<h2 align="center">Featured Projects</h2>\n\n'
+        f'<table width="100%">\n{project_rows}\n</table>\n\n'
+        '<!-- OSS names are native README text. Edit profile.config.json; no SVG changes are needed. -->\n'
+        '<h2 align="center">Open Source Contributions</h2>\n\n'
+        f'<table width="100%">\n{oss_rows}\n</table>\n\n'
         '<p align="center">\n  <img src="./assets/footer.svg" width="100%" alt="Code. Review. Learn. Repeat." />\n</p>\n'
     )
     (ROOT / "README.md").write_text(readme, encoding="utf-8")
@@ -427,15 +383,8 @@ def main() -> None:
     for social in config["socials"]:
         write(f"social-{social['key']}.svg", social_button(social["label"], social["key"]))
     write("stats.svg", stats_svg(config, data))
-    write("section-projects.svg", section_title("Featured Projects", "</>"))
-    for i, project in enumerate(data["projects"]):
-        write(f"project-{i+1}.svg", project_svg(project, i))
-    write("section-oss.svg", section_title("Open Source Contributions", "(o)"))
-    for i, item in enumerate(data["oss"]):
-        write(f"oss-{i+1}.svg", oss_card_svg(item, i))
-    write("oss-graph.svg", oss_graph_svg(data["oss"], data["live"]))
     write("footer.svg", footer_svg(config))
-    write_readme(config)
+    write_readme(config, data)
     print(f"generated profile assets ({'live' if data['live'] else 'fallback'} data)")
 
 

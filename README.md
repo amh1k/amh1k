@@ -16,22 +16,74 @@
   <img src="./assets/stats.svg" width="100%" alt="GitHub statistics and contribution activity" />
 </p>
 
-<p align="center"><img src="./assets/section-projects.svg" width="100%" alt="Featured Projects" /></p>
+<!-- Project names and details are native README text. Edit profile.config.json; no SVG changes are needed. -->
+<h2 align="center">Featured Projects</h2>
 
-<p align="center">
-  <a href="https://github.com/amh1k/mithril-tiles"><img src="./assets/project-1.svg" width="32%" alt="Mithril Tiles" /></a>
-  <a href="https://github.com/amh1k/keepalive-monitoring"><img src="./assets/project-2.svg" width="32%" alt="Keepalive Monitoring" /></a>
-  <a href="https://github.com/amh1k/DurinsCode"><img src="./assets/project-3.svg" width="32%" alt="Durin’s Code" /></a>
-</p>
+<table width="100%">
+  <tr>
+    <td valign="top">
+      <a href="https://github.com/amh1k/mithril-tiles"><strong>Mithril Tiles</strong></a><br />
+      <sub>Real-time multiplayer drawing game with a Go WebSocket backend.</sub>
+    </td>
+    <td align="right" valign="middle">
+      <code>TypeScript</code><br />
+      <sub>★ 1 · Fork 1</sub>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <a href="https://github.com/amh1k/keepalive-monitoring"><strong>Keepalive Monitoring</strong></a><br />
+      <sub>Production-minded uptime monitoring with workers, alerts and incident history.</sub>
+    </td>
+    <td align="right" valign="middle">
+      <code>TypeScript</code><br />
+      <sub>★ 1 · Fork 0</sub>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <a href="https://github.com/amh1k/DurinsCode"><strong>Durin’s Code</strong></a><br />
+      <sub>A C++ DSL compiler and VM for interactive text adventures.</sub>
+    </td>
+    <td align="right" valign="middle">
+      <code>C++</code><br />
+      <sub>★ 1 · Fork 0</sub>
+    </td>
+  </tr>
+</table>
 
-<p align="center"><img src="./assets/section-oss.svg" width="100%" alt="Open Source Contributions" /></p>
+<!-- OSS names are native README text. Edit profile.config.json; no SVG changes are needed. -->
+<h2 align="center">Open Source Contributions</h2>
 
-<p align="center">
-  <a href="https://github.com/alibaba/open-code-review/pulls?q=is%3Apr+author%3Aamh1k"><img src="./assets/oss-1.svg" width="22%" alt="Open Code Review contributions" /></a>
-  <a href="https://github.com/kubestellar/console/pulls?q=is%3Apr+author%3Aamh1k"><img src="./assets/oss-2.svg" width="22%" alt="KubeStellar contributions" /></a>
-  <a href="https://github.com/apache/magpie/pulls?q=is%3Apr+author%3Aamh1k"><img src="./assets/oss-3.svg" width="22%" alt="Apache Magpie contributions" /></a>
-  <img src="./assets/oss-graph.svg" width="32%" alt="Open source contribution graph" />
-</p>
+<table width="100%">
+  <tr>
+    <td valign="middle">
+      <a href="https://github.com/alibaba/open-code-review/pulls?q=is%3Apr+author%3Aamh1k"><strong>Open Code Review</strong></a><br />
+      <sub>alibaba/open-code-review</sub>
+    </td>
+    <td align="right" valign="middle">
+      <sub>0 PRs · 0 merged</sub>
+    </td>
+  </tr>
+  <tr>
+    <td valign="middle">
+      <a href="https://github.com/kubestellar/console/pulls?q=is%3Apr+author%3Aamh1k"><strong>KubeStellar</strong></a><br />
+      <sub>kubestellar/console</sub>
+    </td>
+    <td align="right" valign="middle">
+      <sub>0 PRs · 0 merged</sub>
+    </td>
+  </tr>
+  <tr>
+    <td valign="middle">
+      <a href="https://github.com/apache/magpie/pulls?q=is%3Apr+author%3Aamh1k"><strong>Apache Magpie</strong></a><br />
+      <sub>apache/magpie</sub>
+    </td>
+    <td align="right" valign="middle">
+      <sub>0 PRs · 0 merged</sub>
+    </td>
+  </tr>
+</table>
 
 <p align="center">
   <img src="./assets/footer.svg" width="100%" alt="Code. Review. Learn. Repeat." />
