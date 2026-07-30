@@ -23,7 +23,7 @@
   <tr>
     <td valign="top">
       <a href="https://github.com/amh1k/mithril-tiles"><strong>Mithril Tiles</strong></a><br />
-      <sub>Real-time multiplayer drawing game with a Go WebSocket backend.</sub>
+      <sub>Real-time multiplayer drawing &amp; guessing game with a Go WebSocket backend and TypeScript frontend — server-authoritative room state, phase-based game loop, and concurrency-safe round management.</sub>
     </td>
     <td align="right" valign="middle">
       <code>TypeScript</code><br />
@@ -33,7 +33,7 @@
   <tr>
     <td valign="top">
       <a href="https://github.com/amh1k/keepalive-monitoring"><strong>Keepalive Monitoring</strong></a><br />
-      <sub>Production-minded uptime monitoring with workers, alerts and incident history.</sub>
+      <sub>A high-performance, uptime monitoring system built with the T3 Stack. Features sub-second pinging, automated failover notifications via Discord webhooks, and a robust background task architecture</sub>
     </td>
     <td align="right" valign="middle">
       <code>TypeScript</code><br />
@@ -43,7 +43,7 @@
   <tr>
     <td valign="top">
       <a href="https://github.com/amh1k/DurinsCode"><strong>Durin’s Code</strong></a><br />
-      <sub>A C++ DSL compiler and VM for interactive text adventures.</sub>
+      <sub>Durin’s Code is a DSL created to compile interactive text adventures into playable game engines.</sub>
     </td>
     <td align="right" valign="middle">
       <code>C++</code><br />
@@ -62,7 +62,7 @@
       <sub>alibaba/open-code-review</sub>
     </td>
     <td align="right" valign="middle">
-      <sub>0 PRs · 0 merged</sub>
+      <sub>7 PRs · 6 merged</sub>
     </td>
   </tr>
   <tr>
@@ -71,7 +71,7 @@
       <sub>kubestellar/console</sub>
     </td>
     <td align="right" valign="middle">
-      <sub>0 PRs · 0 merged</sub>
+      <sub>2 PRs · 2 merged</sub>
     </td>
   </tr>
   <tr>
@@ -80,7 +80,7 @@
       <sub>apache/magpie</sub>
     </td>
     <td align="right" valign="middle">
-      <sub>0 PRs · 0 merged</sub>
+      <sub>2 PRs · 2 merged</sub>
     </td>
   </tr>
 </table>
