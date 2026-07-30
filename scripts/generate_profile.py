@@ -41,6 +41,12 @@ def esc(value: Any) -> str:
     return html.escape(str(value), quote=True)
 
 
+def shield_segment(value: Any) -> str:
+    """Encode text for shields.io's static badge route."""
+    text = str(value).replace("-", "--").replace("_", "__").replace(" ", "_")
+    return urllib.parse.quote(text, safe="_")
+
+
 def read_config() -> dict[str, Any]:
     return json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
 
@@ -78,6 +84,7 @@ def fetch_live(config: dict[str, Any], token: str) -> dict[str, Any] | None:
           totalCommitContributions
           totalIssueContributions
           totalPullRequestContributions
+          totalPullRequestReviewContributions
           contributionCalendar {
             totalContributions
             weeks {
@@ -110,7 +117,10 @@ def fetch_live(config: dict[str, Any], token: str) -> dict[str, Any] | None:
             "public_repos": user["repositories"]["totalCount"],
             "stars": sum(node["stargazerCount"] for node in user["repositories"]["nodes"]),
             "pull_requests": raw["data"]["search"]["issueCount"],
+            "pull_request_contributions": collection["totalPullRequestContributions"],
             "commits": collection["totalCommitContributions"],
+            "issues": collection["totalIssueContributions"],
+            "reviews": collection["totalPullRequestReviewContributions"],
             "total_contributions": collection["contributionCalendar"]["totalContributions"],
             "current_streak": current,
             "longest_streak": longest,
@@ -122,7 +132,7 @@ def fetch_live(config: dict[str, Any], token: str) -> dict[str, Any] | None:
             try:
                 repo_data = request_json(f"{API}/repos/{item['repo']}", token)
                 project.update(
-                    description=repo_data.get("description") or item.get("fallback_description", ""),
+                    description=item.get("summary") or repo_data.get("description") or item.get("fallback_description", ""),
                     language=repo_data.get("language") or item.get("fallback_language", "Code"),
                     stars=repo_data.get("stargazers_count", 0),
                     forks=repo_data.get("forks_count", 0),
@@ -130,7 +140,7 @@ def fetch_live(config: dict[str, Any], token: str) -> dict[str, Any] | None:
                 )
             except Exception:
                 project.update(
-                    description=item.get("fallback_description", ""),
+                    description=item.get("summary") or item.get("fallback_description", ""),
                     language=item.get("fallback_language", "Code"),
                     stars=item.get("fallback_stars", 0),
                     forks=item.get("fallback_forks", 0),
@@ -184,14 +194,22 @@ def fallback_data(config: dict[str, Any]) -> dict[str, Any]:
         projects.append(
             {
                 **item,
-                "description": item.get("fallback_description", ""),
+                "description": item.get("summary") or item.get("fallback_description", ""),
                 "language": item.get("fallback_language", "Code"),
                 "stars": item.get("fallback_stars", 0),
                 "forks": item.get("fallback_forks", 0),
                 "url": f"https://github.com/{item['repo']}",
             }
         )
-    oss = [{**item, "prs": 0, "merged": 0, "url": f"https://github.com/{item['repo']}/pulls?q=is%3Apr+author%3A{config['username']}"} for item in config["oss"]]
+    oss = [
+        {
+            **item,
+            "prs": item.get("fallback_prs", 0),
+            "merged": item.get("fallback_merged", 0),
+            "url": f"https://github.com/{item['repo']}/pulls?q=is%3Apr+author%3A{config['username']}",
+        }
+        for item in config["oss"]
+    ]
     return {
         "stats": dict(config["fallback_stats"]),
         "days": preview_days(config["username"]),
@@ -271,6 +289,19 @@ def social_button(label: str, key: str) -> str:
 </svg>'''
 
 
+def section_banner_svg(title: str, kicker: str, symbol: str, accent: str) -> str:
+    symbol_x = min(520, 48 + len(title) * 15)
+    line_x = symbol_x + 48
+    return svg_start(1400, 94, title) + f'''
+<rect width="1400" height="94" fill="{BG}"/>
+<text x="28" y="32" class="mono" font-size="13" font-weight="700" letter-spacing="2.4" fill="{accent}">{esc(kicker)}</text>
+<text x="28" y="72" class="sans" font-size="28" font-weight="700" fill="{TEXT}">{esc(title)}</text>
+<text x="{symbol_x}" y="69" class="mono" font-size="24" fill="{accent}">{esc(symbol)}</text>
+<path d="M{line_x} 61 H1372" stroke="{BORDER}"/>
+<path d="M{line_x} 61 H{line_x + 240}" stroke="{accent}" stroke-opacity=".8"/>
+</svg>'''
+
+
 def level_color(count: int) -> str:
     if count <= 0:
         return "#161b22"
@@ -316,6 +347,58 @@ def stats_svg(config: dict[str, Any], data: dict[str, Any]) -> str:
     return ''.join(chunks)
 
 
+def activity_overview_svg(data: dict[str, Any]) -> str:
+    stats = data["stats"]
+    values = {
+        "reviews": int(stats.get("reviews", 0)),
+        "issues": int(stats.get("issues", 0)),
+        "pull_requests": int(stats.get("pull_request_contributions", stats.get("pull_requests", 0))),
+        "commits": int(stats.get("commits", 0)),
+    }
+    total = sum(values.values())
+    percentages = {
+        key: round(value * 100 / total) if total else 0
+        for key, value in values.items()
+    }
+    status = "LIVE GITHUB DATA" if data["live"] else "WORKFLOW REFRESHES LIVE DATA"
+
+    cx, cy = 700, 166
+    left = max(8, round(250 * percentages["commits"] / 100))
+    right = max(8, round(250 * percentages["issues"] / 100))
+    top = max(8, round(92 * percentages["reviews"] / 100))
+    bottom = max(8, round(92 * percentages["pull_requests"] / 100))
+
+    return svg_start(1400, 330, "GitHub activity overview") + f'''
+<defs>
+  <filter id="green-glow" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="4" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<rect x="1" y="1" width="1398" height="328" rx="16" fill="{PANEL}" stroke="{BORDER}"/>
+<text x="30" y="39" class="mono" font-size="14" font-weight="700" letter-spacing="2" fill="{GREEN}">ACTIVITY OVERVIEW</text>
+<text x="1370" y="39" text-anchor="end" class="mono" font-size="12" fill="{MUTED}">{esc(status)}</text>
+<path d="M450 {cy} H950 M{cx} 66 V266" stroke="{BORDER}" stroke-width="3"/>
+<path d="M{cx} {cy} H{cx-left}" stroke="{GREEN}" stroke-width="5" stroke-linecap="round" filter="url(#green-glow)"/>
+<path d="M{cx} {cy} H{cx+right}" stroke="{GREEN}" stroke-width="5" stroke-linecap="round" filter="url(#green-glow)"/>
+<path d="M{cx} {cy} V{cy-top}" stroke="{GREEN}" stroke-width="5" stroke-linecap="round" filter="url(#green-glow)"/>
+<path d="M{cx} {cy} V{cy+bottom}" stroke="{GREEN}" stroke-width="5" stroke-linecap="round" filter="url(#green-glow)"/>
+<circle cx="{cx}" cy="{cy}" r="8" fill="{TEXT}" stroke="{GREEN}" stroke-width="4"/>
+<circle cx="{cx-left}" cy="{cy}" r="6" fill="{GREEN}"/>
+<circle cx="{cx+right}" cy="{cy}" r="6" fill="{GREEN}"/>
+<circle cx="{cx}" cy="{cy-top}" r="6" fill="{GREEN}"/>
+<circle cx="{cx}" cy="{cy+bottom}" r="6" fill="{GREEN}"/>
+<text x="700" y="62" text-anchor="middle" class="mono" font-size="18" fill="{SOFT}">Code reviews</text>
+<text x="700" y="84" text-anchor="middle" class="mono" font-size="14" fill="{MUTED}">{percentages['reviews']}% · {values['reviews']}</text>
+<text x="1030" y="160" text-anchor="start" class="mono" font-size="18" fill="{SOFT}">Issues</text>
+<text x="1030" y="184" text-anchor="start" class="mono" font-size="14" fill="{MUTED}">{percentages['issues']}% · {values['issues']}</text>
+<text x="700" y="292" text-anchor="middle" class="mono" font-size="18" fill="{SOFT}">Pull requests</text>
+<text x="700" y="314" text-anchor="middle" class="mono" font-size="14" fill="{MUTED}">{percentages['pull_requests']}% · {values['pull_requests']}</text>
+<text x="370" y="160" text-anchor="end" class="mono" font-size="18" fill="{SOFT}">Commits</text>
+<text x="370" y="184" text-anchor="end" class="mono" font-size="14" fill="{MUTED}">{percentages['commits']}% · {values['commits']}</text>
+</svg>'''
+
+
 def footer_svg(config: dict[str, Any]) -> str:
     stack = "  ·  ".join(config.get("stack", []))
     return svg_start(1400, 145, "Code Review Learn Repeat") + f'''
@@ -333,43 +416,57 @@ def write_readme(config: dict[str, Any], data: dict[str, Any]) -> None:
         f'<a href="{esc(item["url"])}"><img src="./assets/social-{esc(item["key"])}.svg" width="18.5%" alt="{esc(item["label"])}" /></a>'
         for item in config["socials"]
     )
-    project_rows = "\n".join(
-        "  <tr>\n"
-        '    <td valign="top">\n'
-        f'      <a href="{esc(item["url"])}"><strong>{esc(item.get("label") or item["repo"].split("/")[-1])}</strong></a><br />\n'
-        f'      <sub>{esc(item.get("description", ""))}</sub>\n'
-        "    </td>\n"
-        '    <td align="right" valign="middle">\n'
-        f'      <code>{esc(item.get("language", "Code"))}</code><br />\n'
-        f'      <sub>★ {esc(item.get("stars", 0))} · Fork {esc(item.get("forks", 0))}</sub>\n'
-        "    </td>\n"
-        "  </tr>"
-        for item in data["projects"]
-    )
-    oss_rows = "\n".join(
-        "  <tr>\n"
-        '    <td valign="middle">\n'
-        f'      <a href="{esc(item["url"])}"><strong>{esc(item["label"])}</strong></a><br />\n'
-        f'      <sub>{esc(item["repo"])}</sub>\n'
-        "    </td>\n"
-        '    <td align="right" valign="middle">\n'
-        f'      <sub>{esc(item.get("prs", 0))} PRs · {esc(item.get("merged", 0))} merged</sub>\n'
-        "    </td>\n"
-        "  </tr>"
-        for item in data["oss"]
-    )
+    project_blocks = []
+    project_accents = ["22d3ee", "a855f7", "60a5fa"]
+    for index, item in enumerate(data["projects"]):
+        label = item.get("label") or item["repo"].split("/")[-1]
+        language = item.get("language", "Code")
+        accent = project_accents[index % len(project_accents)]
+        badge_url = (
+            f"https://img.shields.io/badge/{shield_segment(label)}-"
+            f"{shield_segment(language)}-26303a?style=for-the-badge"
+            f"&logo=github&logoColor={accent}&labelColor=0b0f14"
+        )
+        project_blocks.append(
+            '<p align="center">\n'
+            f'  <a href="{esc(item["url"])}"><img src="{esc(badge_url)}" alt="{esc(label)} — {esc(language)}" /></a><br />\n'
+            f'  <sub>{esc(item.get("description", ""))}</sub><br />\n'
+            f'  <sub>★ {esc(item.get("stars", 0))} · Fork {esc(item.get("forks", 0))}</sub>\n'
+            "</p>"
+        )
+
+    oss_badges = []
+    oss_accents = ["22d3ee", "60a5fa", "a855f7"]
+    for index, item in enumerate(data["oss"]):
+        label = item["label"]
+        message = f"{item.get('prs', 0)} PRs · {item.get('merged', 0)} merged"
+        accent = oss_accents[index % len(oss_accents)]
+        logo = urllib.parse.quote(str(item.get("logo", "github")), safe="")
+        badge_url = (
+            f"https://img.shields.io/badge/{shield_segment(label)}-"
+            f"{shield_segment(message)}-26303a?style=for-the-badge"
+            f"&logo={logo}&logoColor={accent}&labelColor=0b0f14"
+        )
+        oss_badges.append(
+            f'<a href="{esc(item["url"])}"><img src="{esc(badge_url)}" alt="{esc(label)} — {esc(message)}" /></a>'
+        )
+
+    projects_markup = "\n\n".join(project_blocks)
+    oss_markup = "&nbsp;\n  ".join(oss_badges)
     name = esc(config["name"])
     readme = (
         "<!-- AUTO-GENERATED by scripts/generate_profile.py. Edit profile.config.json instead. -->\n\n"
         f'<p align="center">\n  <img src="./assets/hero.svg" width="100%" alt="{name}" />\n</p>\n\n'
         f'<p align="center">\n  {socials}\n</p>\n\n'
         '<p align="center">\n  <img src="./assets/stats.svg" width="100%" alt="GitHub statistics and contribution activity" />\n</p>\n\n'
-        '<!-- Project names and details are native README text. Edit profile.config.json; no SVG changes are needed. -->\n'
-        '<h2 align="center">Featured Projects</h2>\n\n'
-        f'<table width="100%">\n{project_rows}\n</table>\n\n'
-        '<!-- OSS names are native README text. Edit profile.config.json; no SVG changes are needed. -->\n'
-        '<h2 align="center">Open Source Contributions</h2>\n\n'
-        f'<table width="100%">\n{oss_rows}\n</table>\n\n'
+        '<!-- Project names are generated from profile.config.json into replaceable badge URLs, never local SVGs. -->\n'
+        '<p align="center"><img src="./assets/section-projects.svg" width="100%" alt="Featured Projects" /></p>\n\n'
+        f'{projects_markup}\n\n'
+        '<!-- OSS names are generated from profile.config.json into replaceable badge URLs, never local SVGs. -->\n'
+        '<p align="center"><img src="./assets/section-oss.svg" width="100%" alt="Open Source Contributions" /></p>\n\n'
+        f'<p align="center">\n  {oss_markup}\n</p>\n\n'
+        '<p align="center"><sub>Each badge opens the pull requests authored in that upstream repository.</sub></p>\n\n'
+        '<p align="center">\n  <img src="./assets/activity-overview.svg" width="100%" alt="GitHub activity overview: commits, pull requests, issues and code reviews" />\n</p>\n\n'
         '<p align="center">\n  <img src="./assets/footer.svg" width="100%" alt="Code. Review. Learn. Repeat." />\n</p>\n'
     )
     (ROOT / "README.md").write_text(readme, encoding="utf-8")
@@ -383,6 +480,9 @@ def main() -> None:
     for social in config["socials"]:
         write(f"social-{social['key']}.svg", social_button(social["label"], social["key"]))
     write("stats.svg", stats_svg(config, data))
+    write("section-projects.svg", section_banner_svg("Featured Projects", "SELECTED BUILDS", "</>", CYAN))
+    write("section-oss.svg", section_banner_svg("Open Source Contributions", "PUBLIC COLLABORATION", "{ }", GREEN))
+    write("activity-overview.svg", activity_overview_svg(data))
     write("footer.svg", footer_svg(config))
     write_readme(config, data)
     print(f"generated profile assets ({'live' if data['live'] else 'fallback'} data)")

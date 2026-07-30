@@ -16,74 +16,41 @@
   <img src="./assets/stats.svg" width="100%" alt="GitHub statistics and contribution activity" />
 </p>
 
-<!-- Project names and details are native README text. Edit profile.config.json; no SVG changes are needed. -->
-<h2 align="center">Featured Projects</h2>
+<!-- Project names are generated from profile.config.json into replaceable badge URLs, never local SVGs. -->
+<p align="center"><img src="./assets/section-projects.svg" width="100%" alt="Featured Projects" /></p>
 
-<table width="100%">
-  <tr>
-    <td valign="top">
-      <a href="https://github.com/amh1k/mithril-tiles"><strong>Mithril Tiles</strong></a><br />
-      <sub>Real-time multiplayer drawing &amp; guessing game with a Go WebSocket backend and TypeScript frontend — server-authoritative room state, phase-based game loop, and concurrency-safe round management.</sub>
-    </td>
-    <td align="right" valign="middle">
-      <code>TypeScript</code><br />
-      <sub>★ 1 · Fork 1</sub>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top">
-      <a href="https://github.com/amh1k/keepalive-monitoring"><strong>Keepalive Monitoring</strong></a><br />
-      <sub>A high-performance, uptime monitoring system built with the T3 Stack. Features sub-second pinging, automated failover notifications via Discord webhooks, and a robust background task architecture</sub>
-    </td>
-    <td align="right" valign="middle">
-      <code>TypeScript</code><br />
-      <sub>★ 1 · Fork 0</sub>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top">
-      <a href="https://github.com/amh1k/DurinsCode"><strong>Durin’s Code</strong></a><br />
-      <sub>Durin’s Code is a DSL created to compile interactive text adventures into playable game engines.</sub>
-    </td>
-    <td align="right" valign="middle">
-      <code>C++</code><br />
-      <sub>★ 1 · Fork 0</sub>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <a href="https://github.com/amh1k/mithril-tiles"><img src="https://img.shields.io/badge/Mithril_Tiles-TypeScript-26303a?style=for-the-badge&amp;logo=github&amp;logoColor=22d3ee&amp;labelColor=0b0f14" alt="Mithril Tiles — TypeScript" /></a><br />
+  <sub>Real-time multiplayer drawing with a Go WebSocket backend.</sub><br />
+  <sub>★ 1 · Fork 1</sub>
+</p>
 
-<!-- OSS names are native README text. Edit profile.config.json; no SVG changes are needed. -->
-<h2 align="center">Open Source Contributions</h2>
+<p align="center">
+  <a href="https://github.com/amh1k/keepalive-monitoring"><img src="https://img.shields.io/badge/Keepalive_Monitoring-TypeScript-26303a?style=for-the-badge&amp;logo=github&amp;logoColor=a855f7&amp;labelColor=0b0f14" alt="Keepalive Monitoring — TypeScript" /></a><br />
+  <sub>Fast uptime monitoring with workers, alerts and incident history.</sub><br />
+  <sub>★ 1 · Fork 0</sub>
+</p>
 
-<table width="100%">
-  <tr>
-    <td valign="middle">
-      <a href="https://github.com/alibaba/open-code-review/pulls?q=is%3Apr+author%3Aamh1k"><strong>Open Code Review</strong></a><br />
-      <sub>alibaba/open-code-review</sub>
-    </td>
-    <td align="right" valign="middle">
-      <sub>7 PRs · 6 merged</sub>
-    </td>
-  </tr>
-  <tr>
-    <td valign="middle">
-      <a href="https://github.com/kubestellar/console/pulls?q=is%3Apr+author%3Aamh1k"><strong>KubeStellar</strong></a><br />
-      <sub>kubestellar/console</sub>
-    </td>
-    <td align="right" valign="middle">
-      <sub>2 PRs · 2 merged</sub>
-    </td>
-  </tr>
-  <tr>
-    <td valign="middle">
-      <a href="https://github.com/apache/magpie/pulls?q=is%3Apr+author%3Aamh1k"><strong>Apache Magpie</strong></a><br />
-      <sub>apache/magpie</sub>
-    </td>
-    <td align="right" valign="middle">
-      <sub>2 PRs · 2 merged</sub>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <a href="https://github.com/amh1k/DurinsCode"><img src="https://img.shields.io/badge/Durin%E2%80%99s_Code-C%2B%2B-26303a?style=for-the-badge&amp;logo=github&amp;logoColor=60a5fa&amp;labelColor=0b0f14" alt="Durin’s Code — C++" /></a><br />
+  <sub>A C++ DSL compiler and VM for interactive text adventures.</sub><br />
+  <sub>★ 1 · Fork 0</sub>
+</p>
+
+<!-- OSS names are generated from profile.config.json into replaceable badge URLs, never local SVGs. -->
+<p align="center"><img src="./assets/section-oss.svg" width="100%" alt="Open Source Contributions" /></p>
+
+<p align="center">
+  <a href="https://github.com/alibaba/open-code-review/pulls?q=is%3Apr+author%3Aamh1k"><img src="https://img.shields.io/badge/Open_Code_Review-7_PRs_%C2%B7_6_merged-26303a?style=for-the-badge&amp;logo=github&amp;logoColor=22d3ee&amp;labelColor=0b0f14" alt="Open Code Review — 7 PRs · 6 merged" /></a>&nbsp;
+  <a href="https://github.com/kubestellar/console/pulls?q=is%3Apr+author%3Aamh1k"><img src="https://img.shields.io/badge/KubeStellar-2_PRs_%C2%B7_2_merged-26303a?style=for-the-badge&amp;logo=kubernetes&amp;logoColor=60a5fa&amp;labelColor=0b0f14" alt="KubeStellar — 2 PRs · 2 merged" /></a>&nbsp;
+  <a href="https://github.com/apache/magpie/pulls?q=is%3Apr+author%3Aamh1k"><img src="https://img.shields.io/badge/Apache_Magpie-2_PRs_%C2%B7_2_merged-26303a?style=for-the-badge&amp;logo=apache&amp;logoColor=a855f7&amp;labelColor=0b0f14" alt="Apache Magpie — 2 PRs · 2 merged" /></a>
+</p>
+
+<p align="center"><sub>Each badge opens the pull requests authored in that upstream repository.</sub></p>
+
+<p align="center">
+  <img src="./assets/activity-overview.svg" width="100%" alt="GitHub activity overview: commits, pull requests, issues and code reviews" />
+</p>
 
 <p align="center">
   <img src="./assets/footer.svg" width="100%" alt="Code. Review. Learn. Repeat." />

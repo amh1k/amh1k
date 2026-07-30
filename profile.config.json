@@ -17,6 +17,7 @@
     {
       "repo": "amh1k/mithril-tiles",
       "label": "Mithril Tiles",
+      "summary": "Real-time multiplayer drawing with a Go WebSocket backend.",
       "fallback_description": "Real-time multiplayer drawing game with a Go WebSocket backend.",
       "fallback_language": "TypeScript",
       "fallback_stars": 1,
@@ -25,6 +26,7 @@
     {
       "repo": "amh1k/keepalive-monitoring",
       "label": "Keepalive Monitoring",
+      "summary": "Fast uptime monitoring with workers, alerts and incident history.",
       "fallback_description": "Production-minded uptime monitoring with workers, alerts and incident history.",
       "fallback_language": "TypeScript",
       "fallback_stars": 1,
@@ -33,6 +35,7 @@
     {
       "repo": "amh1k/DurinsCode",
       "label": "Durin’s Code",
+      "summary": "A C++ DSL compiler and VM for interactive text adventures.",
       "fallback_description": "A C++ DSL compiler and VM for interactive text adventures.",
       "fallback_language": "C++",
       "fallback_stars": 1,
@@ -40,18 +43,21 @@
     }
   ],
   "oss": [
-    {"repo": "alibaba/open-code-review", "label": "Open Code Review"},
-    {"repo": "kubestellar/console", "label": "KubeStellar"},
-    {"repo": "apache/magpie", "label": "Apache Magpie"}
+    {"repo": "alibaba/open-code-review", "label": "Open Code Review", "logo": "github", "fallback_prs": 7, "fallback_merged": 6},
+    {"repo": "kubestellar/console", "label": "KubeStellar", "logo": "kubernetes", "fallback_prs": 2, "fallback_merged": 2},
+    {"repo": "apache/magpie", "label": "Apache Magpie", "logo": "apache", "fallback_prs": 2, "fallback_merged": 2}
   ],
   "stack": ["Go", "TypeScript", "React", "PostgreSQL", "Redis", "Docker", "Kubernetes"],
   "fallback_stats": {
     "public_repos": 48,
-    "stars": 29,
-    "pull_requests": 0,
-    "commits": 0,
-    "total_contributions": 0,
-    "current_streak": 0,
-    "longest_streak": 0
+    "stars": 7,
+    "pull_requests": 54,
+    "pull_request_contributions": 54,
+    "commits": 585,
+    "issues": 0,
+    "reviews": 0,
+    "total_contributions": 778,
+    "current_streak": 5,
+    "longest_streak": 16
   }
 }
