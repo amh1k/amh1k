@@ -23,7 +23,7 @@
 
 <img src="./assets/section-divider.svg" width="100%" alt="" />
 
-### `~/featured-projects`
+<h2 align="center">Featured projects</h2>
 
 <!--
   EDIT: PROJECTS
@@ -38,7 +38,7 @@
   <a href="https://github.com/amh1k/DurinsCode"><img width="32%" alt="Durin's Code" src="https://github-readme-stats.vercel.app/api/pin/?username=amh1k&repo=DurinsCode&hide_border=true&bg_color=00000000&title_color=8B5CF6&text_color=8B949E&icon_color=22D3EE&description_lines_count=1" /></a>
 </p>
 
-### `~/open-source`
+<h2 align="center">Open source</h2>
 
 <!--
   EDIT: OSS
@@ -51,7 +51,7 @@
   <a href="https://github.com/apache/magpie/pulls?q=is%3Apr+author%3Aamh1k"><img alt="Apache Magpie contributions" src="https://img.shields.io/badge/Apache_Magpie-161B22?style=flat-square&logo=apache&logoColor=8B5CF6" /></a>
 </p>
 
-### `~/contribution-rhythm`
+<h2 align="center">Contribution rhythm</h2>
 
 <!-- EDIT: replace amh1k in username= and the destination link when reusing -->
 <p align="center">
