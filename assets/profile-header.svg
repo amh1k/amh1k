@@ -1,68 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
-  <title id="title">Abdul Moiz Hussain profile header</title>
-  <desc id="desc">Software should feel deliberate. Backend engineer and open-source contributor.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+<title id="title">Abdul Moiz Hussain — software should feel deliberate</title>
+<desc id="desc">Backend engineer and open-source contributor working with Go, TypeScript and cloud-native systems.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#0d1117"/>
+    <stop offset="100%" stop-color="#11161d"/>
+  </linearGradient>
+  <radialGradient id="glow" cx="85%" cy="10%" r="65%">
+    <stop offset="0%" stop-color="#e3a24b" stop-opacity=".16"/>
+    <stop offset="55%" stop-color="#c9784a" stop-opacity=".05"/>
+    <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
+  </radialGradient>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M40 0H0V40" fill="none" stroke="#30363d" stroke-width="1" opacity=".18"/>
+  </pattern>
+</defs>
 
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0d1117"/>
-      <stop offset="100%" stop-color="#111821"/>
-    </linearGradient>
-    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
-      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#30363d" stroke-width="1" opacity="0.22"/>
-    </pattern>
-    <filter id="soft">
-      <feGaussianBlur stdDeviation="28"/>
-    </filter>
-  </defs>
+<rect width="1200" height="320" rx="20" fill="url(#bg)"/>
+<rect width="1200" height="320" rx="20" fill="url(#grid)"/>
+<rect width="1200" height="320" rx="20" fill="url(#glow)"/>
+<rect x=".5" y=".5" width="1199" height="319" rx="19.5" fill="none" stroke="#2a313b"/>
 
-  <rect width="1200" height="300" rx="18" fill="url(#bg)"/>
-  <rect width="1200" height="300" rx="18" fill="url(#grid)"/>
+<text x="66" y="94" fill="#f2eee8" font-family="Georgia, 'Times New Roman', serif" font-size="49" font-style="italic" font-weight="700">
+  software should feel deliberate.
+</text>
+<text x="68" y="139" fill="#8f979f" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace" font-size="17">
+  backend systems, open source, and engineering beyond the happy path.
+</text>
 
-  <circle cx="1030" cy="55" r="115" fill="#1f6feb" opacity="0.12" filter="url(#soft)"/>
-  <circle cx="1120" cy="255" r="135" fill="#2ea043" opacity="0.09" filter="url(#soft)"/>
+<line x1="66" y1="178" x2="1134" y2="178" stroke="#2a313b"/>
 
-  <text x="64" y="95"
-        fill="#f0f6fc"
-        font-family="Georgia, 'Times New Roman', serif"
-        font-size="48"
-        font-style="italic"
-        font-weight="700">
-    software should feel deliberate.
-  </text>
+<text x="68" y="216" fill="#e3a24b" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="700" letter-spacing="2">ENGINEER</text>
+<text x="68" y="246" fill="#f2eee8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="600">Abdul Moiz Hussain</text>
+<text x="68" y="273" fill="#8f979f" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace" font-size="13">backend-first · full-stack · open source</text>
 
-  <text x="66" y="140"
-        fill="#8b949e"
-        font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
-        font-size="18">
-    backend systems, open source, and engineering beyond the happy path.
-  </text>
+<text x="450" y="216" fill="#e3a24b" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="700" letter-spacing="2">CONTRIBUTING</text>
+<text x="450" y="246" fill="#f2eee8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="600">Alibaba · KubeStellar</text>
+<text x="450" y="273" fill="#8f979f" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace" font-size="13">reliability · testing · maintainability</text>
 
-  <line x1="64" y1="174" x2="1136" y2="174" stroke="#30363d"/>
+<text x="870" y="216" fill="#e3a24b" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="700" letter-spacing="2">WORKING SET</text>
+<text x="870" y="246" fill="#f2eee8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="600">Go · TypeScript · PostgreSQL</text>
+<text x="870" y="273" fill="#8f979f" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace" font-size="13">APIs · realtime · cloud-native systems</text>
 
-  <text x="66" y="210" fill="#6e7681"
-        font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
-        font-size="12" font-weight="700" letter-spacing="2">ENGINEER</text>
-  <text x="66" y="238" fill="#c9d1d9"
-        font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
-        font-size="16">Abdul Moiz Hussain</text>
-
-  <text x="415" y="210" fill="#6e7681"
-        font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
-        font-size="12" font-weight="700" letter-spacing="2">CONTRIBUTING</text>
-  <text x="415" y="238" fill="#c9d1d9"
-        font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
-        font-size="16">Alibaba · KubeStellar · cloud-native OSS</text>
-
-  <text x="890" y="210" fill="#6e7681"
-        font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
-        font-size="12" font-weight="700" letter-spacing="2">WORKING SET</text>
-  <text x="890" y="238" fill="#c9d1d9"
-        font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
-        font-size="16">Go · TypeScript · PostgreSQL</text>
-
-  <circle cx="1128" cy="48" r="7" fill="#2ea043"/>
-  <text x="1110" y="78" fill="#6e7681"
-        text-anchor="end"
-        font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
-        font-size="11">BUILDING IN PUBLIC</text>
+<circle cx="1130" cy="49" r="6" fill="#7eb77f"/>
+<text x="1110" y="54" fill="#8f979f" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace" font-size="11">BUILDING IN PUBLIC</text>
 </svg>
