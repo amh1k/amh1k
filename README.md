@@ -41,7 +41,7 @@
 <p align="center"><img src="./assets/section-oss.svg" width="100%" alt="Open Source Contributions" /></p>
 
 <p align="center">
-  <a href="https://github.com/alibaba/open-code-review/pulls?q=is%3Apr+author%3Aamh1k"><img src="https://img.shields.io/badge/Open_Code_Review-10_PRs_%C2%B7_6_merged-26303a?style=for-the-badge&amp;logo=github&amp;logoColor=22d3ee&amp;labelColor=0b0f14" alt="Open Code Review — 10 PRs · 6 merged" /></a>&nbsp;
+  <a href="https://github.com/alibaba/open-code-review/pulls?q=is%3Apr+author%3Aamh1k"><img src="https://img.shields.io/badge/Open_Code_Review-11_PRs_%C2%B7_8_merged-26303a?style=for-the-badge&amp;logo=github&amp;logoColor=22d3ee&amp;labelColor=0b0f14" alt="Open Code Review — 11 PRs · 8 merged" /></a>&nbsp;
   <a href="https://github.com/kubestellar/console/pulls?q=is%3Apr+author%3Aamh1k"><img src="https://img.shields.io/badge/KubeStellar-2_PRs_%C2%B7_2_merged-26303a?style=for-the-badge&amp;logo=kubernetes&amp;logoColor=60a5fa&amp;labelColor=0b0f14" alt="KubeStellar — 2 PRs · 2 merged" /></a>&nbsp;
   <a href="https://github.com/apache/magpie/pulls?q=is%3Apr+author%3Aamh1k"><img src="https://img.shields.io/badge/Apache_Magpie-2_PRs_%C2%B7_2_merged-26303a?style=for-the-badge&amp;logo=apache&amp;logoColor=a855f7&amp;labelColor=0b0f14" alt="Apache Magpie — 2 PRs · 2 merged" /></a>
 </p>
