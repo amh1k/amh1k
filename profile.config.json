@@ -43,9 +43,11 @@
     }
   ],
   "oss": [
-    {"repo": "alibaba/open-code-review", "label": "Open Code Review", "logo": "github", "fallback_prs": 7, "fallback_merged": 6},
+    {"repo": "alibaba/open-code-review", "label": "Open Code Review", "logo": "github", "fallback_prs": 16, "fallback_merged": 11},
     {"repo": "kubestellar/console", "label": "KubeStellar", "logo": "kubernetes", "fallback_prs": 2, "fallback_merged": 2},
-    {"repo": "apache/magpie", "label": "Apache Magpie", "logo": "apache", "fallback_prs": 2, "fallback_merged": 2}
+    {"repo": "apache/magpie", "label": "Apache Magpie", "logo": "apache", "fallback_prs": 2, "fallback_merged": 2},
+    {"repo": "openeverest/openeverest", "label": "OpenEverest", "logo": "github", "fallback_prs": 1, "fallback_merged": 0},
+    {"repo": "kubeflow/sdk", "label": "Kubeflow SDK", "logo": "kubernetes", "fallback_prs": 1, "fallback_merged": 0}
   ],
   "stack": ["Go", "TypeScript", "React", "PostgreSQL", "Redis", "Docker", "Kubernetes"],
   "fallback_stats": {
