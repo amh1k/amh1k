@@ -34,8 +34,8 @@ I contribute primarily to **backend systems, Go tooling, Kubernetes, and cloud-n
 Below are selected contributions that best represent my engineering work.
 
 <!-- PROFILE_DYNAMIC:START -->
-<p align="center"><sub><strong>25 PRs</strong> · <strong>15 merged</strong> · <strong>10 open</strong> · live GitHub data</sub><br />
-<sub>Open Code Review: 16 PRs / 11 merged · KubeStellar: 2 PRs / 2 merged · Apache Magpie: 2 PRs / 2 merged · OpenEverest: 3 PRs / 0 merged · Kubeflow SDK: 2 PRs / 0 merged</sub></p>
+<p align="center"><sub><strong>25 PRs</strong> · <strong>16 merged</strong> · <strong>9 open</strong> · live GitHub data</sub><br />
+<sub>Open Code Review: 16 PRs / 11 merged · KubeStellar: 2 PRs / 2 merged · Apache Magpie: 2 PRs / 2 merged · OpenEverest: 3 PRs / 1 merged · Kubeflow SDK: 2 PRs / 0 merged</sub></p>
 <!-- PROFILE_DYNAMIC:END -->
 
 | Project | Pull Request | Status | Engineering Impact |
