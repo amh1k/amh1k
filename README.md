@@ -33,7 +33,6 @@
 I contribute primarily to **backend systems, Kubernetes, cloud-native infrastructure, and developer tooling**, with ongoing work across the **OpenEverest ecosystem**, Alibaba OpenCodeReview, Kubeflow, Apache, and KubeStellar.
 
 <!-- PROFILE_DYNAMIC:START -->
-
 <p align="center"><sub><strong>25 PRs</strong> · <strong>17 merged</strong> · <strong>8 open</strong> · live GitHub data</sub><br />
 <sub>Open Code Review: 16 PRs / 11 merged · KubeStellar: 2 PRs / 2 merged · Apache Magpie: 2 PRs / 2 merged · OpenEverest: 3 PRs / 2 merged · Kubeflow SDK: 2 PRs / 0 merged</sub></p>
 <!-- PROFILE_DYNAMIC:END -->
