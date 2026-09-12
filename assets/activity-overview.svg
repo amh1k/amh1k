@@ -29,7 +29,7 @@
 <circle cx="700" cy="158" r="6" fill="#39d353"/>
 <circle cx="700" cy="177" r="6" fill="#39d353"/>
 <text x="700" y="62" text-anchor="middle" class="mono" font-size="18" fill="#b8c0cc">Code reviews</text>
-<text x="700" y="84" text-anchor="middle" class="mono" font-size="14" fill="#8b949e">0% · 0</text>
+<text x="700" y="84" text-anchor="middle" class="mono" font-size="14" fill="#8b949e">0% · 1</text>
 <text x="1030" y="160" text-anchor="start" class="mono" font-size="18" fill="#b8c0cc">Issues</text>
 <text x="1030" y="184" text-anchor="start" class="mono" font-size="14" fill="#8b949e">1% · 10</text>
 <text x="700" y="292" text-anchor="middle" class="mono" font-size="18" fill="#b8c0cc">Pull requests</text>
